@@ -5,7 +5,11 @@
 //  Created by Varun Narayanswamy on 9/3/19.
 //  Copyright © 2019 Varun Narayanswamy LPC. All rights reserved.
 //
-
+//https://funnyjunk.com/funny_pictures/1044961/Cleverbot/
+//https://www.pinterest.com/pin/474777985697341348/?lp=true
+//https://knowyourmeme.com/memes/surprised-pikachu
+//http://www.quickmeme.com/meme/3sroh3
+//https://archive.nyafuu.org/vp/thread/13826863/
 import UIKit
 
 class ViewController: UIViewController {

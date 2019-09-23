@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SliderApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7N9-h1-pk0">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="335"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="kQV-yy-QEu">
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="335"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="hugeidiots" translatesAutoresizingMaskIntoConstraints="NO" id="Lqw-Cb-5tv">
+                                                <rect key="frame" x="0.0" y="0.0" width="667" height="89.5"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Huge Nerds" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wsz-Ms-H3p">
+                                                <rect key="frame" x="288" y="137.5" width="91.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cE3-e3-CwH">
+                                                <rect key="frame" x="20" y="206" width="627" height="129"/>
+                                                <subviews>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="59N-ss-E4i">
+                                                        <rect key="frame" x="0.0" y="0.0" width="627" height="29"/>
+                                                        <segments>
+                                                            <segment title="Friends"/>
+                                                            <segment title="Family"/>
+                                                        </segments>
+                                                        <connections>
+                                                            <action selector="selectFF:" destination="BYZ-38-t0r" eventType="valueChanged" id="jhU-Xx-Ahz"/>
+                                                        </connections>
+                                                    </segmentedControl>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tIf-k8-hUN">
+                                                        <rect key="frame" x="0.0" y="48" width="627" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSO-rV-rim">
+                                                                <rect key="frame" x="0.0" y="0.0" width="307" height="30"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="15" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="4f2-oZ-gbZ">
+                                                                <rect key="frame" x="325" y="0.0" width="304" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="300" id="bxn-0x-9z0"/>
+                                                                </constraints>
+                                                                <connections>
+                                                                    <action selector="SlippingAndSlidin:" destination="BYZ-38-t0r" eventType="valueChanged" id="wMO-kj-sV7"/>
+                                                                </connections>
+                                                            </slider>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="bSO-rV-rim" firstAttribute="leading" secondItem="tIf-k8-hUN" secondAttribute="leading" id="A0u-uT-1oF"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fPc-hX-xCz">
+                                                        <rect key="frame" x="0.0" y="98" width="627" height="31"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFW-vX-fvd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="570" height="31"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aIs-WO-0Cr">
+                                                                <rect key="frame" x="578" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="CapsAndSlaps:" destination="BYZ-38-t0r" eventType="valueChanged" id="yBl-b3-HGa"/>
+                                                                </connections>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="59N-ss-E4i" firstAttribute="leading" secondItem="cE3-e3-CwH" secondAttribute="leading" id="XGi-EY-1rL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="59N-ss-E4i" secondAttribute="trailing" id="c11-pD-7iY"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="XGi-EY-1rL"/>
+                                                        <exclude reference="c11-pD-7iY"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="XGi-EY-1rL"/>
+                                                        <include reference="c11-pD-7iY"/>
+                                                    </mask>
+                                                </variation>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="cE3-e3-CwH" secondAttribute="trailing" constant="20" id="6DN-e3-5Kc"/>
+                                            <constraint firstItem="cE3-e3-CwH" firstAttribute="leading" secondItem="kQV-yy-QEu" secondAttribute="leading" constant="20" id="qCL-Mx-ehQ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7N9-h1-pk0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SDf-x2-ahs"/>
+                            <constraint firstItem="7N9-h1-pk0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="W2W-3K-Xbr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7N9-h1-pk0" secondAttribute="trailing" id="tOb-Dt-dE0"/>
+                            <constraint firstAttribute="bottom" secondItem="7N9-h1-pk0" secondAttribute="bottom" constant="40" id="vfu-EY-6Oj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="CapsOutlet" destination="xFW-vX-fvd" id="bM4-1B-BCR"/>
+                        <outlet property="FFLabel" destination="Wsz-Ms-H3p" id="YsH-WG-lr7"/>
+                        <outlet property="FamFriendImage" destination="Lqw-Cb-5tv" id="LH4-u5-sg5"/>
+                        <outlet property="SizeOutlet" destination="bSO-rV-rim" id="3jc-8d-bjI"/>
+                        <outlet property="capsSwitch" destination="aIs-WO-0Cr" id="kAX-ab-jGg"/>
+                        <outlet property="imageControl" destination="59N-ss-E4i" id="8lf-gV-bId"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="132.58928571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hugeidiots" width="2048" height="1536"/>
+    </resources>
+</document>

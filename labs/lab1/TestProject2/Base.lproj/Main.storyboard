@@ -18,22 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nh-JX-yhK">
-                                <rect key="frame" x="20" y="178" width="126" height="59"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="126" id="bYp-3q-UAC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
-                                <state key="normal" title="Pokemon Roast"/>
-                                <connections>
-                                    <action selector="ButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XRn-pG-yd7"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hilariousgame" translatesAutoresizingMaskIntoConstraints="NO" id="SWn-2h-i4C">
                                 <rect key="frame" x="20" y="245" width="374" height="608"/>
                             </imageView>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sr-mV-oHp">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sr-mV-oHp">
                                 <rect key="frame" x="275" y="178" width="119" height="58"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -41,6 +29,11 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
                                 <state key="normal" title="Song Lyrics"/>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="TOi-Xd-QvO"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="ButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lBJ-Nf-ogK"/>
                                 </connections>
@@ -51,23 +44,112 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nh-JX-yhK">
+                                <rect key="frame" x="20" y="178" width="126" height="59"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="D1E-W0-9RU"/>
+                                    <constraint firstAttribute="height" constant="128" id="aCe-xZ-dRn"/>
+                                    <constraint firstAttribute="width" constant="126" id="bYp-3q-UAC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
+                                <state key="normal" title="Pokemon Roast"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="D1E-W0-9RU"/>
+                                        <exclude reference="aCe-xZ-dRn"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="D1E-W0-9RU"/>
+                                        <include reference="aCe-xZ-dRn"/>
+                                        <exclude reference="bYp-3q-UAC"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="ButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XRn-pG-yd7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.25980418350000001" green="1" blue="0.5040583542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="HDf-Y0-7kL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0N1-RM-fXf"/>
                             <constraint firstItem="SWn-2h-i4C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="201" id="2BN-3w-8hz"/>
                             <constraint firstItem="2Nh-JX-yhK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2kR-Zz-sxy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2sr-mV-oHp" secondAttribute="bottom" constant="31" id="5ny-7R-siP"/>
+                            <constraint firstItem="2Nh-JX-yhK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="DB4-7J-7UV"/>
+                            <constraint firstItem="HDf-Y0-7kL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="IIN-8a-9tl"/>
+                            <constraint firstItem="2sr-mV-oHp" firstAttribute="width" secondItem="2Nh-JX-yhK" secondAttribute="width" id="JLu-Lg-hnm"/>
                             <constraint firstItem="SWn-2h-i4C" firstAttribute="top" secondItem="2sr-mV-oHp" secondAttribute="bottom" constant="9" id="Ncs-91-ptU"/>
                             <constraint firstItem="2sr-mV-oHp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="134" id="OK9-8I-XhT"/>
                             <constraint firstItem="2Nh-JX-yhK" firstAttribute="top" secondItem="HDf-Y0-7kL" secondAttribute="bottom" constant="60" id="Qwi-0n-PfQ"/>
                             <constraint firstItem="SWn-2h-i4C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TUJ-CL-X7z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SWn-2h-i4C" secondAttribute="bottom" constant="21" id="Tmy-F8-hhp"/>
+                            <constraint firstItem="2Nh-JX-yhK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="WlI-AZ-eb2"/>
                             <constraint firstItem="2Nh-JX-yhK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="134" id="XpI-13-oxu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SWn-2h-i4C" secondAttribute="trailing" constant="20" id="YFh-l6-7si"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2sr-mV-oHp" secondAttribute="trailing" constant="20" id="bTc-N3-FU7"/>
+                            <constraint firstItem="2sr-mV-oHp" firstAttribute="height" secondItem="2Nh-JX-yhK" secondAttribute="height" id="jsb-96-lNK"/>
+                            <constraint firstItem="SWn-2h-i4C" firstAttribute="leading" secondItem="2sr-mV-oHp" secondAttribute="trailing" constant="432" id="msd-UP-mfF"/>
+                            <constraint firstItem="SWn-2h-i4C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="mup-uS-Rrz"/>
+                            <constraint firstItem="2sr-mV-oHp" firstAttribute="top" secondItem="2Nh-JX-yhK" secondAttribute="bottom" constant="34" id="olv-ze-BY3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SWn-2h-i4C" secondAttribute="bottom" constant="9" id="pRk-37-qBj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SWn-2h-i4C" secondAttribute="trailing" constant="20" id="qJy-wA-mgM"/>
+                            <constraint firstItem="2sr-mV-oHp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="r1r-I6-IkJ"/>
                             <constraint firstItem="SWn-2h-i4C" firstAttribute="top" secondItem="2Nh-JX-yhK" secondAttribute="bottom" constant="8" id="si1-Bp-Z04"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HDf-Y0-7kL" secondAttribute="bottom" constant="293" id="vAP-0x-cpj"/>
                             <constraint firstItem="HDf-Y0-7kL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xwY-uk-uzP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5ny-7R-siP"/>
+                                <exclude reference="Tmy-F8-hhp"/>
+                                <exclude reference="YFh-l6-7si"/>
+                                <exclude reference="vAP-0x-cpj"/>
+                                <exclude reference="DB4-7J-7UV"/>
+                                <exclude reference="WlI-AZ-eb2"/>
+                                <exclude reference="JLu-Lg-hnm"/>
+                                <exclude reference="jsb-96-lNK"/>
+                                <exclude reference="olv-ze-BY3"/>
+                                <exclude reference="r1r-I6-IkJ"/>
+                                <exclude reference="0N1-RM-fXf"/>
+                                <exclude reference="IIN-8a-9tl"/>
+                                <exclude reference="msd-UP-mfF"/>
+                                <exclude reference="mup-uS-Rrz"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="5ny-7R-siP"/>
+                                <include reference="Tmy-F8-hhp"/>
+                                <include reference="YFh-l6-7si"/>
+                                <exclude reference="bTc-N3-FU7"/>
+                                <exclude reference="pRk-37-qBj"/>
+                                <exclude reference="qJy-wA-mgM"/>
+                                <include reference="vAP-0x-cpj"/>
+                                <exclude reference="2kR-Zz-sxy"/>
+                                <include reference="DB4-7J-7UV"/>
+                                <exclude reference="Qwi-0n-PfQ"/>
+                                <include reference="WlI-AZ-eb2"/>
+                                <exclude reference="XpI-13-oxu"/>
+                                <include reference="JLu-Lg-hnm"/>
+                                <exclude reference="OK9-8I-XhT"/>
+                                <include reference="jsb-96-lNK"/>
+                                <include reference="olv-ze-BY3"/>
+                                <include reference="r1r-I6-IkJ"/>
+                                <include reference="0N1-RM-fXf"/>
+                                <include reference="IIN-8a-9tl"/>
+                                <exclude reference="xwY-uk-uzP"/>
+                                <exclude reference="2BN-3w-8hz"/>
+                                <exclude reference="Ncs-91-ptU"/>
+                                <exclude reference="TUJ-CL-X7z"/>
+                                <include reference="msd-UP-mfF"/>
+                                <include reference="mup-uS-Rrz"/>
+                                <exclude reference="si1-Bp-Z04"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="MainLabel" destination="HDf-Y0-7kL" id="kOC-aZ-XbN"/>
@@ -76,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135.19999999999999" y="132.68365817091455"/>
+            <point key="canvasLocation" x="134.59821428571428" y="131.8840579710145"/>
         </scene>
     </scenes>
     <resources>
