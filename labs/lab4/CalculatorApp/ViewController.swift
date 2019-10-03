@@ -79,6 +79,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 }
 
+//Source: https://stackoverflow.com/questions/11664115/unable-to-simultaneously-satisfy-constraints-will-attempt-to-recover-by-breakin
 extension NSLayoutConstraint {
     
     override open var description: String {
