@@ -71,7 +71,10 @@ class LogPages: UIViewController, UITextFieldDelegate {
             ViewController.globalVar.AllBooks[index].weeklyPages = ViewController.globalVar.AllBooks[index].weeklyPages + Int(PagesRead.text!)!
             ViewController.globalVar.AllBooks[index].timeRemaining = ViewController.globalVar.AllBooks[index].timeRemaining - 1
             let Remaining_pages = ViewController.globalVar.AllBooks[index].pages! - ViewController.globalVar.AllBooks[index].currentPages
+            if (ViewController.globalVar.AllBooks[index].timeRemaining != 0)
+            {
             ViewController.globalVar.AllBooks[index].GoalPages = Remaining_pages/ViewController.globalVar.AllBooks[index].timeRemaining
+            }
             setNextDate()
         }
     }

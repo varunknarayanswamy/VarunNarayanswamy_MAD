@@ -36,7 +36,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "LogB")
         {
-            print("extra")
             let source = segue.destination as! LogPages
             let sourceIndex = bookTable.indexPathForSelectedRow?.row
             source.Book_info = BookClass[sourceIndex!]
@@ -47,7 +46,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         AddBooks()
         if (sender.selectedSegmentIndex == 0)
         {
-            globalVar.currentGoal.currentDate = globalVar.currentGoal.nextDate
+            globalVar.currentGoal.currentDate = globalVar.currentGoal.nextDate //this is used to fake time passing to see the interactions on a goal date
             CheckGoals()
         }
     }
