@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     var BookClass = [Books]()
     override func viewDidLoad() {
-        globalVar.currentGoal.currentDate = date
+        globalVar.currentGoal.currentDate = date //the reason currentdate exists is so I have a date I can manually iterate it up, so that I can force the program to think a day/week/month has passed. That way, I can simulate the long term goal functionality of the application. In the real application currentDate would not exist
         bookTable.delegate = self
         bookTable.dataSource = self
         Initialize()
@@ -47,7 +47,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         AddBooks()
         if (sender.selectedSegmentIndex == 0)
         {
-            globalVar.currentGoal.currentDate = globalVar.currentGoal.currentDate
+            globalVar.currentGoal.currentDate = globalVar.currentGoal.nextDate
             CheckGoals()
         }
     }
@@ -66,7 +66,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func CheckGoals()
     {
-        if (globalVar.currentGoal.nextDate == globalVar.currentGoal.StartDate)
+        if (globalVar.currentGoal.nextDate == globalVar.currentGoal.currentDate)
         {
             print("checkingGoals")
             let Alert = UIAlertController(title: "Today is the day", message: "Turn in those pages!", preferredStyle: UIAlertController.Style.alert)

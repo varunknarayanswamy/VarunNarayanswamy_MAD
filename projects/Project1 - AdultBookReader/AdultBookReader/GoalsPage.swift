@@ -72,15 +72,18 @@ class GoalsPage: UIViewController, UITextFieldDelegate {
         if (ViewController.globalVar.currentGoal.goalType == "day")
         {
             TimePerType = Calendar.current.dateComponents([.day], from: ViewController.globalVar.currentGoal.StartDate!, to: ViewController.globalVar.currentGoal.finalDate!).day!
+            //Source: https://stackoverflow.com/questions/40075850/swift-3-find-number-of-calendar-days-between-two-dates
         }
         else if (ViewController.globalVar.currentGoal.goalType == "week")
         {
             let TimePerDay = Calendar.current.dateComponents([.day], from: ViewController.globalVar.currentGoal.StartDate!, to: ViewController.globalVar.currentGoal.finalDate!).day!
+             //Source: https://stackoverflow.com/questions/40075850/swift-3-find-number-of-calendar-days-between-two-dates
             TimePerType = TimePerDay/7
         }
         else
         {
             TimePerType = Calendar.current.dateComponents([.month], from: ViewController.globalVar.currentGoal.StartDate!, to: ViewController.globalVar.currentGoal.finalDate!).month!
+             //Source: https://stackoverflow.com/questions/40075850/swift-3-find-number-of-calendar-days-between-two-dates
         }
         let TimePerBook = TimePerType/(ViewController.globalVar.currentGoal.totalBooks)
         print(TimePerBook)
@@ -92,7 +95,8 @@ class GoalsPage: UIViewController, UITextFieldDelegate {
         var dateCompFinal = DateComponents()
         dateCompFinal.month = Int(Length.text!)
         print(dateCompFinal.month)
-        let final = Calendar.current.date(byAdding: dateCompFinal, to: ViewController.globalVar.currentGoal.StartDate!)
+        let final = Calendar.current.date(byAdding: dateCompFinal, to:  ViewController.globalVar.currentGoal.StartDate!)
+        //Source: http://swiftdeveloperblog.com/code-examples/add-days-months-or-years-to-current-date-in-swift/
         ViewController.globalVar.currentGoal.finalDate = final!
         print("end date \(ViewController.globalVar.currentGoal.finalDate)")
         print("end date \(ViewController.globalVar.currentGoal.StartDate)")
@@ -118,6 +122,7 @@ class GoalsPage: UIViewController, UITextFieldDelegate {
             ViewController.globalVar.currentGoal.goalType = "month"
         }
         let future = Calendar.current.date(byAdding: datecomp, to: ViewController.globalVar.currentGoal.StartDate!)
+        //Source: http://swiftdeveloperblog.com/code-examples/add-days-months-or-years-to-current-date-in-swift/
         ViewController.globalVar.currentGoal.nextDate = future!
     }
     

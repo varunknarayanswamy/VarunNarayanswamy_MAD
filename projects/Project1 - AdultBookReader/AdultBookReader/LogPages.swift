@@ -66,7 +66,7 @@ class LogPages: UIViewController, UITextFieldDelegate {
     
     func UpdateBook(_ index: Int)
     {
-        if (ViewController.globalVar.currentGoal.nextDate == ViewController.globalVar.currentGoal.StartDate && ViewController.globalVar.AllBooks[index].currentBook == true)
+        if (ViewController.globalVar.currentGoal.nextDate == ViewController.globalVar.currentGoal.currentDate && ViewController.globalVar.AllBooks[index].currentBook == true)
         {
             ViewController.globalVar.AllBooks[index].weeklyPages = ViewController.globalVar.AllBooks[index].weeklyPages + Int(PagesRead.text!)!
             ViewController.globalVar.AllBooks[index].timeRemaining = ViewController.globalVar.AllBooks[index].timeRemaining - 1
@@ -92,8 +92,9 @@ class LogPages: UIViewController, UITextFieldDelegate {
         {
             datecomp.month = 1
         }
-        let future = Calendar.current.date(byAdding: datecomp, to: ViewController.globalVar.currentGoal.StartDate!)
+        let future = Calendar.current.date(byAdding: datecomp, to: ViewController.globalVar.currentGoal.currentDate!)
         ViewController.globalVar.currentGoal.nextDate = future!
+        //Source: https://stackoverflow.com/questions/40075850/swift-3-find-number-of-calendar-days-between-two-dates
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
