@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MovieRec</string>
+    <string name="Movie">Movie</string>
+    <string name="Television">TV</string>
+    <string name="length1">PG</string>
+    <string name="length2">PG-13</string>
+    <string name="length3">R</string>
+    <string name="requirement1">Black and White</string>
+    <string name="requirement2">Animation</string>
+    <string name="requirement3">American</string>
+    <string name="Button">Find Movie</string>
+    <string name="MovieName">Movie Name</string>
+    <string name="ShowPic">Show Picture</string>
+    <string-array name="Genres">
+        <item>Horror</item>
+        <item>Comedy</item>
+        <item>Action</item>
+    </string-array>
+</resources>
