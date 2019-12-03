@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BookReccomender</string>
+    <string name="book_queue">Time to find you a good book</string>
+    <string name="Button_book">Find a Book</string>
+    <string name="genre">What genre do you like?</string>
+    <string-array name="Genrestyle">
+        <item>Mystery</item>
+        <item>Fantasy</item>
+        <item>Sci-Fi</item>
+        <item>Realistic Fiction</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="SuggestedBook">This Book is Perfect for you</string>
+</resources>

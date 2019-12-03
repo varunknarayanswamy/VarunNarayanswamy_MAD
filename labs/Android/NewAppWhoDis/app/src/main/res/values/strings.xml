@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NewAppWhoDis</string>
+    <string name="suggested_coffee">This is your coffee shop</string>
+    <string name="button">Drink that coffee idiot</string>
+    <string-array name="pokemonstores">
+        <item>I dont know</item>
+        <item>This will change</item>
+        <item>Hmm</item>
+    </string-array>
+    <string-array name="newArray">
+
+    </string-array>
+
+    <string name="title_activity_dumb">DumbActivity</string>
+</resources>
