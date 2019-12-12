@@ -26,7 +26,7 @@ public class FinishActivity extends AppCompatActivity {
             Intent intent = getIntent();
             int finalScore = intent.getIntExtra("finalscore", 0);
             String scorenum = Integer.toString(finalScore);
-            String score = "You got " + scorenum + " out of 18";
+            String score = "You got " + scorenum + " out of 24";
             finalScoreView.setText(score);
         }
     }
