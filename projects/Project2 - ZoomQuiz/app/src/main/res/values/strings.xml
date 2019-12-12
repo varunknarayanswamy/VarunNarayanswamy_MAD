@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ZoomQuiz</string>
+    <string name="QuizTitle">Animal Quiz</string>
+    <string name="hint">What is the image?</string>
+    <string name="submit">Submit a response</string>
+    <string name="zoom">Zoom Out</string>
+    <string name="Ppoints">Possible Points: 3</string>
+    <string name="CurrentPoints">Current Points: </string>
+    <string name="CurrentPointsNum">0</string>
+    <string name="Congrats">You got 0 points out of 0!</string>
+    <string name="restart">Restart</string>
+</resources>
