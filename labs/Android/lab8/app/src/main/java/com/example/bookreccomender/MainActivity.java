@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         BookButton.setOnClickListener(onClick);
     }
 
-    private void findBook(View view){
+    public void findBook(View view){
         Integer genre = GenreSpinner.getSelectedItemPosition();
         bookShop.setBookAuthor(genre);
 

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">NarayanwamyFinal</string>
+    <string name="title">Make Your Favorite Burrito</string>
+    <string name="buttonName">Make the Burrito</string>
+    <string name="favoriteBurrito">This is your favorite burrito</string>
+    <string name="toggleOn">Veggies</string>
+    <string name="toggleOff">Meat</string>
+    <string name="radio1">Burrito</string>
+    <string name="radio2">Bowl</string>
+    <string name="radio3">Taco</string>
+    <string name="salsa">salsa</string>
+    <string name="guacamole">guacamole</string>
+    <string name="sourCream">Sour Cream</string>
+    <string name="hint">Enter your name</string>
+    <string-array name="locations">
+        <item>the hill</item>
+        <item>29th street</item>
+        <item>downtown</item>
+        <item>Other</item>
+    </string-array>
+    <string name="findLoc">Find a place to eat</string>
+    <string name="title_activity_find_burrito">FindBurrito</string>
+    <string name="Locationtitle">location</string>
+
+</resources>
