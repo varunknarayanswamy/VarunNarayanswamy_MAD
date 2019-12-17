@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
                 finalString = finalString + " and salsa.";
             }
             String spinnerval = String.valueOf(locations.getSelectedItem());
-            finalString = finalString + " In the " + spinnerval + " area";
+            finalString = finalString + " You are trying to go in the " + spinnerval + " area";
             BurritoDesc.setText(finalString);
         }
     }
