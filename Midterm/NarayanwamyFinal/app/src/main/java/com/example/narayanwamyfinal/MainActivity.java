@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
             }
             if(sourCream.isChecked())
             {
-                finalString = finalString + ", sour Cream";
+                finalString = finalString + ", sour cream";
             }
             if (guacamole.isChecked())
             {
@@ -88,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
             {
                 finalString = finalString + " and salsa.";
             }
+            String spinnerval = String.valueOf(locations.getSelectedItem());
+            finalString = finalString + " In the " + spinnerval + " area";
             BurritoDesc.setText(finalString);
         }
     }

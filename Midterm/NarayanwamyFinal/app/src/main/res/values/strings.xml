@@ -13,7 +13,7 @@
     <string name="sourCream">Sour Cream</string>
     <string name="hint">Enter your name</string>
     <string-array name="locations">
-        <item>the hill</item>
+        <item>hill</item>
         <item>29th street</item>
         <item>downtown</item>
         <item>Other</item>
